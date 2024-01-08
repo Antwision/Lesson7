@@ -1,1 +1,8 @@
-
+version: '3'
+services:
+    assembly:
+        build:
+            context: ./Assemblyr
+            dockerfile: Dockerfile
+        volumes:
+            - './CommonFiles:/usr/src/app/boxfuse-sample-java-war-hello/target'
