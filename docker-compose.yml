@@ -5,10 +5,12 @@ services:
             context: ./Assembly
             dockerfile: Dockerfile
         volumes:
-            - './CommonFiles:/usr/src/app/boxfuse-sample-java-war-hello/target'
+            - 'CommonFiles:/usr/src/app/boxfuse-sample-java-war-hello/target'
     prod:
         build:
             context: ./Production
             dockerfile: Dockerfile
         volumes:
-            - './CommonFiles:/var/lib/tomcat8/webapps'
+            - 'CommonFiles:/var/lib/tomcat8/webapps'
+volumes:
+    CommonFiles:
