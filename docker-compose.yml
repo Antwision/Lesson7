@@ -12,6 +12,8 @@ services:
             dockerfile: Dockerfile
         ports:
              - '8080:8080'
+        depends_on:
+             - assembly
         volumes:
             - 'CommonFiles:/var/lib/tomcat8/webapps'
 volumes:
