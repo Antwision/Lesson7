@@ -15,6 +15,6 @@ services:
         depends_on:
              - assembly
         volumes:
-            - 'CommonFiles:/var/lib/tomcat8/webapps'
+            - 'CommonFiles:/usr/local/tomcat/webapps'
 volumes:
     CommonFiles:
